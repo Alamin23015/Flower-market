@@ -1,0 +1,78 @@
+body {
+  font-family: 'Noto Serif', serif;
+}
+.ful{
+    color: red;
+}
+.ul{
+    display: flex;
+    gap: 10px;
+   list-style-type:none;
+    text-decoration: none;
+}
+.header{
+    display: flex;
+  justify-content: space-between;
+  padding: 10px 200px;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 150px;
+  background-color: white;
+  max-width: 1200px;
+  margin: 50px auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+}
+
+.text-box {
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+  color: #222;
+}
+
+.highlight {
+  color: red;
+}
+
+.para {
+  color: #000;
+  opacity: 0.6;
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.img-box img {
+  max-width: 400px;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .head {
+    flex-direction: column-reverse;   /* Stack vertically */
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .img-box img {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .para {
+    font-size: 16px;
+  }
+}
+.plant{
+    text-align: center;
+}
+
