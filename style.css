@@ -127,3 +127,88 @@ h1 {
 
 
 
+
+
+
+  .t{
+    margin-top: 10px;
+    padding-top: 30px;
+  }
+  .offer-container {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px;
+}
+
+.left-offers {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.right-offer {
+  flex: 2;
+}
+
+.offer-card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offer-card.small {
+  height: 180px;
+}
+
+.offer-card.large {
+  height: 380px;
+}
+
+.offer-text {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.offer-text h2, .offer-text h3 {
+  margin: 0 0 10px 0;
+}
+
+.offer-text a {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.subscribe-btn{
+  background-color: #f5800b;
+  font-size: 25px;
+}
+
+.form{
+  text-align: center;
+  /* background-image: url(images/news-letter-bg.png); */
+  width: 100vh;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+}
+.form h1{
+  color: #f8f9f7;
+}
+.subscribe-form{
+/* background-color: aliceblue; */
+
+font-size: 25px;
+box-sizing: border-box;
+}
+
