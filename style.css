@@ -102,7 +102,7 @@ h1 {
 }
 @media (max-width: 576px) {
   .head {
-    flex-direction: column-reverse;   /* Stack vertically */
+    flex-direction: column-reverse;   
     padding: 40px 20px;
     text-align: center;
   }
@@ -248,6 +248,13 @@ h1 {
         margin-left: 0;
         text-align: center;
     }
+    .bonus-list h1{
+    
+       text-align: center;
+      text-decoration: none;
+      margin-left: 30px;
+      
+    }
     .bonus-img img {
         width: 100%;
         max-width: 300px;
@@ -358,47 +365,61 @@ h1 {
 }
 
 
-.form{
-
-  text-align: center;
+.subscribe-section {
+  background: url('images/news-letter-bg.png') no-repeat center center/cover;
+  height: 50vh;
+  width: auto;
+  display: flex;
   justify-content: center;
-  margin-top:20px;
-  background-image: url(images/news-letter-bg.png);
-  height: 380px;
+  align-items: center;
 }
-/* .imgg{
-  height: 380px;
-} */
-.b {
-  color: #70c818;
-  font-weight: bold;
-  
-  
-}
-.subscribe-form h1{
-  margin-top: 100px;
-}
-.subscribe-btn{
-font-size: 25px;
-box-sizing: border-box;
-margin-top: 200px;
-}
-.b1 p{
-  width: 400px;
 
+.overlay {
+  text-align: center;
+  color: white;
+   font-weight: bold;
+   font-size: 2rem;
+  padding: 20px;
+  border-radius: 10px;
 }
+/* .overlay p{
+  font-weight: bold;
+  font-size: 50px;
+} */
+
+.subscribe-box {
+  margin-top: 20px;
+}
+
+.subscribe-box input {
+  padding: 10px;
+  width: 300px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+}
+
+.subscribe-box button {
+  padding: 10px 20px;
+  background-color: #ff5c1c;
+  color: white;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
 .foot{
 
   display:flex;
   justify-content:space-around;
   flex-direction: row;
   padding: 20px 0px;
-  margin-left: 100px;
+  margin-left: 50px;
 }
-.list{
+.list ul li{
   text-decoration: none;
   list-style-type: none;
-  margin: 10px 0px;
+  margin:0px 0px;
+ 
 }
 .emg{
   gap: 5px;
@@ -406,14 +427,38 @@ margin-top: 200px;
   margin-left: 20px;
 }
 
-  @media (max-width: 576px){
-    .foot{
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
+  
+@media (max-width: 576px) {
+  .foot {
+    flex-direction: column;
+    padding: 0;
   }
 
+  .foot .b1,
+  .foot .list,
+  .foot .emg {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .foot li {
+    margin: 0;
+    
+  }
+
+  .emg {
+    display: flex;
+   
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .b1 p {
+    
+    padding: 10px;
+  }
+}
 
 
 
