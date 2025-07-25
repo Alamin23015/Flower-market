@@ -100,7 +100,7 @@ h1 {
   max-width: 400px;
   height: auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .head {
     flex-direction: column-reverse;   /* Stack vertically */
     padding: 40px 20px;
@@ -165,9 +165,15 @@ h1 {
    width: 100%
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 576px) {
     .grid-container{
         grid-template-columns: repeat(2,1fr);
+    }
+    .card img{
+      width: 200px;
+      height: auto;
+      gap: auto;
+      padding: 10px 0px;
     }
     .card button {
   background-color: #ff6600;
@@ -178,14 +184,81 @@ h1 {
   cursor: pointer;
   font-weight: bold;
   object-fit: cover;
-   width: 80%
+   width: 80%;
   }
   }
 
+    .bonus-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 8rem auto;
+    padding: 0 1rem;
+    gap: 1rem;
+}
+.images, .bonus-list{
+    flex: 1;
+}
+.images{
+    display: flex;
+    position: relative;
+}
+.trusted-img img {
+    width: 16rem;
+    position: absolute;
+    top: -7rem;
+    left: 14rem;
+}
+.bonus-img img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+}
+.bonus-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    margin-right: 2.5rem;
+    margin-left: 3.8rem;
+}
+.list ul li{
+    
+    color: #252432;
+    font-size: 0.8rem;
+    opacity: 0.7;
+    padding: .5rem;
+    align-items: flex-start;
+    word-wrap: break-word;
+}
+
+@media (max-width: 576px){
+     .trusted-img{
+    display: none;
+   }
+   .bonus-container {
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem 0;
+    }
+    .bonus-list {
+        margin-right: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+    .bonus-img img {
+        width: 100%;
+        max-width: 300px;
+    }
+    .list ul li {
+        text-align: flex-start;
+    }
+}
 
 
-
-
+   
 
 
   .t{
@@ -251,7 +324,7 @@ h1 {
   background-color: #f5800b;
   font-size: 25px;
 }
- @media (max-width: 768px) {
+ @media (max-width: 576px) {
   .offer-container {
     flex-direction: column;
     padding: 20px;
@@ -317,14 +390,14 @@ margin-top: 200px;
 .foot{
 
   display:flex;
-  justify-content: center;
+  justify-content:space-around;
   flex-direction: row;
   padding: 20px 0px;
   margin-left: 100px;
 }
 .list{
   text-decoration: none;
-  
+  list-style-type: none;
   margin: 10px 0px;
 }
 .emg{
@@ -332,6 +405,14 @@ margin-top: 200px;
   margin-top: 10px;
   margin-left: 20px;
 }
+
+  @media (max-width: 576px){
+    .foot{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
 
 
 
